@@ -1,0 +1,252 @@
+/* Alberta Junk King - Global Styles */
+/* Color system */
+:root {
+  --green-900: #0f3d2e;
+  --green-800: #0b3a2a;
+  --green-700: #145c45;
+  --green-600: #1a6d54;
+  --accent-lime: #c7ea1e;
+  --accent-lime-600: #b7db10;
+  --bg: #ffffff;
+  --surface: #f4f8f6;
+  --text-primary: #0c2e24;
+  --text-secondary: #4b5e57;
+  --border: #dbe7e2;
+  --shadow: 0 10px 30px rgba(15, 61, 46, 0.08);
+}
+
+/* Reset + base */
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+  color: var(--text-primary);
+  background: var(--bg);
+  line-height: 1.6;
+}
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Typography */
+.heading-xl {
+  font-family: "Barlow", Inter, system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(36px, 6vw, 72px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.heading-lg {
+  font-family: "Barlow", Inter, system-ui, sans-serif;
+  font-weight: 800;
+  font-size: clamp(24px, 3.5vw, 36px);
+  line-height: 1.15;
+}
+
+.subhead {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.accent {
+  color: var(--accent-lime);
+}
+
+/* Header / Nav */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  height: 68px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+}
+
+.brand-mark {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: var(--green-900);
+  color: var(--accent-lime);
+  font-weight: 900;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  font-family: "Barlow", Inter, system-ui, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav-links a {
+  color: var(--green-900);
+}
+
+.nav-links a:hover {
+  color: var(--accent-lime-600);
+}
+
+.nav-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+@media (max-width: 880px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: inline-grid; place-items: center; }
+  .nav.open .nav-links {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 68px;
+    padding: 16px 20px 24px;
+    display: grid;
+    gap: 12px;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+}
+
+/* Hero */
+.hero {
+  padding: 56px 0 24px;
+}
+
+.hero .heading-xl {
+  color: var(--green-900);
+}
+
+.hero-cta {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  height: 48px;
+  padding: 0 18px;
+  border-radius: 12px;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background: var(--green-900);
+  color: #fff;
+}
+
+.btn-primary:hover { background: var(--green-700); }
+
+.btn-ghost {
+  background: var(--surface);
+  color: var(--green-900);
+  border-color: var(--border);
+}
+
+.hero-note {
+  margin-top: 8px;
+  color: var(--text-secondary);
+}
+
+/* Services */
+.services {
+  padding: 28px 0 60px;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 28px;
+}
+
+@media (max-width: 1100px) {
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 620px) {
+  .service-grid { grid-template-columns: 1fr; }
+}
+
+.service {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+}
+
+.service .icon {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, var(--accent-lime), #d9f067);
+  display: grid;
+  place-items: center;
+  margin-bottom: 14px;
+}
+
+.service .title {
+  font-family: "Barlow", Inter, system-ui, sans-serif;
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--green-900);
+  line-height: 1.15;
+}
+
+.service p {
+  margin-top: 12px;
+  color: var(--text-secondary);
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 40px;
+  background: var(--green-900);
+  color: #fff;
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 8px;
+  padding: 24px 0;
+}
+
+.site-footer a { color: #fff; text-decoration: underline; }
+
