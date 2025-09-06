@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing - Alberta Junk King</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="logo.png" alt="Alberta Junk King" class="logo">
+                <span class="logo-text">Alberta Junk King</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="pricing.html" class="nav-link active">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a href="what-we-remove.html" class="nav-link">What We Remove</a>
+                </li>
+                <li class="nav-item">
+                    <a href="business-services.html" class="nav-link">Business Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="locations.html" class="nav-link">Locations</a>
+                </li>
+                <li class="nav-item">
+                    <a href="reviews.html" class="nav-link">Reviews</a>
+                </li>
+            </ul>
+            <div class="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Transparent Pricing</h1>
+            <p>No hidden fees, no surprises. Get upfront pricing for all your junk removal needs.</p>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+        <div class="container">
+            <div class="pricing-intro">
+                <h2>Simple, Upfront Pricing</h2>
+                <p>We believe in transparent pricing. What you see is what you pay - no hidden fees, no disposal charges, no surprises.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Small Load</h3>
+                        <div class="price">$150 - $300</div>
+                        <p>Perfect for single items or small cleanouts</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to 1/4 truck load</li>
+                        <li><i class="fas fa-check"></i> 1-2 person crew</li>
+                        <li><i class="fas fa-check"></i> Same day service available</li>
+                        <li><i class="fas fa-check"></i> Free on-site estimate</li>
+                    </ul>
+                    <a href="#quote" class="btn btn-primary">Get Quote</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <div class="pricing-badge">Most Popular</div>
+                    <div class="pricing-header">
+                        <h3>Medium Load</h3>
+                        <div class="price">$300 - $500</div>
+                        <p>Ideal for room cleanouts or multiple items</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to 1/2 truck load</li>
+                        <li><i class="fas fa-check"></i> 2-3 person crew</li>
+                        <li><i class="fas fa-check"></i> Same day service available</li>
+                        <li><i class="fas fa-check"></i> Free on-site estimate</li>
+                        <li><i class="fas fa-check"></i> Eco-friendly disposal</li>
+                    </ul>
+                    <a href="#quote" class="btn btn-primary">Get Quote</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Large Load</h3>
+                        <div class="price">$500 - $800</div>
+                        <p>Perfect for whole house or office cleanouts</p>
+                    </div>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Up to full truck load</li>
+                        <li><i class="fas fa-check"></i> 3-4 person crew</li>
+                        <li><i class="fas fa-check"></i> Same day service available</li>
+                        <li><i class="fas fa-check"></i> Free on-site estimate</li>
+                        <li><i class="fas fa-check"></i> Eco-friendly disposal</li>
+                        <li><i class="fas fa-check"></i> Priority scheduling</li>
+                    </ul>
+                    <a href="#quote" class="btn btn-primary">Get Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section class="quote-form" id="quote">
+        <div class="container">
+            <div class="form-container">
+                <h2>Get Your Free Quote</h2>
+                <p>Tell us about your junk removal needs and we'll provide an accurate, upfront estimate.</p>
+                
+                <form class="quote-form-element">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="location">Location *</label>
+                            <select id="location" name="location" required>
+                                <option value="">Select your city</option>
+                                <option value="calgary">Calgary</option>
+                                <option value="edmonton">Edmonton</option>
+                                <option value="red-deer">Red Deer</option>
+                                <option value="lethbridge">Lethbridge</option>
+                                <option value="medicine-hat">Medicine Hat</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="items">What items need to be removed? *</label>
+                        <textarea id="items" name="items" rows="4" placeholder="Please describe the items you need removed (e.g., old furniture, appliances, construction debris, etc.)" required></textarea>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="load-size">Estimated Load Size</label>
+                            <select id="load-size" name="load-size">
+                                <option value="">Select size</option>
+                                <option value="small">Small (1/4 truck)</option>
+                                <option value="medium">Medium (1/2 truck)</option>
+                                <option value="large">Large (full truck)</option>
+                                <option value="unsure">Not sure</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="timeline">When do you need service?</label>
+                            <select id="timeline" name="timeline">
+                                <option value="">Select timeline</option>
+                                <option value="same-day">Same day</option>
+                                <option value="next-day">Next day</option>
+                                <option value="this-week">This week</option>
+                                <option value="flexible">Flexible</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large">Get Free Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing FAQ -->
+    <section class="pricing-faq">
+        <div class="container">
+            <h2>Pricing FAQ</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do you calculate pricing?</h3>
+                    <p>Our pricing is based on the volume of items and the space they take up in our truck. We provide free on-site estimates to give you the most accurate pricing.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are there any hidden fees?</h3>
+                    <p>No! Our pricing is 100% upfront and all-inclusive. The price we quote includes pickup, transportation, and proper disposal. No hidden fees or surprise charges.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Do you offer same-day service?</h3>
+                    <p>Yes! We offer same-day and next-day service throughout Alberta. Contact us early in the day for the best availability.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What payment methods do you accept?</h3>
+                    <p>We accept cash, credit cards, and debit cards. Payment is due upon completion of the job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Alberta Junk King</h3>
+                    <p>Professional junk removal services across Alberta. Fast, reliable, and environmentally responsible.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="what-we-remove.html">What We Remove</a></li>
+                        <li><a href="business-services.html">Business Services</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="locations.html">Locations</a></li>
+                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-phone"></i> (800) JUNK-KING</p>
+                    <p><i class="fas fa-envelope"></i> info@albertajunkking.ca</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Serving all of Alberta</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Alberta Junk King. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
