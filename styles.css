@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* CSS Connection Test - Remove this after confirming CSS works */
+body {
+    background-color: #f0f8ff !important;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
