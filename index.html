@@ -1,83 +1,226 @@
 <!doctype html>
-<html lang="en-CA">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Alberta Junk King | Junk Removal in Alberta</title>
-  <meta name="description" content="Fast, upfront-priced junk removal across Alberta. Same-day service, we remove everything, and we recycle & donate.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700;800;900&family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="/">
-        <span class="brand-mark" aria-hidden="true">AJ</span>
-        <span>Alberta Junk King</span>
-      </a>
-      <nav class="nav-links" aria-label="Primary">
-        <a href="/pricing.html">Pricing</a>
-        <a href="/what-we-remove.html">What We Remove</a>
-        <a href="/business-services.html">Business Services</a>
-        <a href="/locations.html">Locations</a>
-        <a href="/reviews.html">Reviews</a>
-      </nav>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
-    </div>
-  </header>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Albreta Junk King | Alberta Junk Removal</title>
+    <meta name="description" content="Albreta Junk King provides fast, upfront-priced junk removal across Alberta. Same-day service, eco-friendly recycling and donations." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;800&family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <div class="brand">
+          <span class="crown">♛</span>
+          <span class="brand-title">Albreta Junk King</span>
+        </div>
+        <button class="nav-toggle" aria-label="Open Menu" aria-expanded="false">☰</button>
+        <nav class="site-nav" id="site-nav">
+          <a href="#pricing">Pricing</a>
+          <a href="#what-we-remove">What We Remove</a>
+          <a href="#business">Business Services</a>
+          <a href="#locations">Locations</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact" class="btn btn-sm">Book Now</a>
+        </nav>
+      </div>
+    </header>
 
-  <main>
     <section class="hero">
-      <div class="container">
-        <h1 class="heading-xl">Remove your junk <span class="accent">the easy way.</span></h1>
-        <p class="subhead">Serving homes and businesses across Alberta with upfront pricing and same‑day removal.</p>
+      <div class="container hero-inner">
+        <h1>Remove your junk <span class="accent">the easy way.</span></h1>
+        <p class="subtitle">Fast, clean and friendly junk removal all across Alberta — with honest, upfront pricing.</p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="tel:+1-000-000-0000">Call for Same‑Day Pickup</a>
-          <a class="btn btn-ghost" href="/pricing.html">See Pricing</a>
+          <a href="#contact" class="btn btn-primary">Get Free Estimate</a>
+          <a href="#what-we-remove" class="btn btn-outline">What We Remove</a>
         </div>
-        <p class="hero-note">We serve Calgary, Edmonton, Red Deer, and surrounding communities.</p>
+      </div>
+      <svg class="hero-wave" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0,64L48,58.7C96,53,192,43,288,58.7C384,75,480,117,576,122.7C672,128,768,96,864,85.3C960,75,1056,85,1152,85.3C1248,85,1344,75,1392,69.3L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"/></svg>
+    </section>
+
+    <section class="features container" id="features">
+      <div class="feature">
+        <div class="icon">✅</div>
+        <h3>We Remove Everything</h3>
+        <p>Including the kitchen sink! Simply point and we do the rest. Check out <a href="#what-we-remove">What We Remove</a>.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🚚</div>
+        <h3>Same Day Removal</h3>
+        <p>Need removal fast? We offer same/next day appointments and removal on-the-spot.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🤝</div>
+        <h3>Upfront Pricing</h3>
+        <p>Unlike others with hidden fees, our pricing is 100% upfront and all-inclusive.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">♻️</div>
+        <h3>We Recycle & Donate</h3>
+        <p>If your items still have life, we take them to the nearest charity or recycling depot.</p>
       </div>
     </section>
 
-    <section class="services">
+    <section class="stripe" id="pricing">
       <div class="container">
-        <div class="service-grid">
-          <article class="service">
-            <div class="icon" aria-hidden="true">✅</div>
-            <h3 class="title">We Remove Everything</h3>
-            <p>Including the kitchen sink. Simply point and we do the rest. Check out <a href="/what-we-remove.html">what we remove</a>.</p>
+        <h2>Transparent Pricing</h2>
+        <p class="lead">Simple volume-based pricing. No surprises.</p>
+        <div class="cards">
+          <article class="card">
+            <h3>Single Item</h3>
+            <p class="price">$89 - $149</p>
+            <ul>
+              <li>Curbside discount available</li>
+              <li>Includes loading and disposal</li>
+              <li>Ideal for appliances and mattresses</li>
+            </ul>
           </article>
-          <article class="service">
-            <div class="icon" aria-hidden="true">🚚</div>
-            <h3 class="title">Same Day Removal</h3>
-            <p>Need removal fast? We offer same/next day appointments and on‑the‑spot removal.</p>
+          <article class="card">
+            <h3>1/4 Truck</h3>
+            <p class="price">$199 - $299</p>
+            <ul>
+              <li>Up to 3 cubic yards</li>
+              <li>Labour and sweep-up included</li>
+              <li>Great for small clear-outs</li>
+            </ul>
           </article>
-          <article class="service">
-            <div class="icon" aria-hidden="true">🤝</div>
-            <h3 class="title">Upfront Pricing</h3>
-            <p>No hidden fees or disposal charges. Our pricing is 100% upfront and all‑inclusive.</p>
+          <article class="card">
+            <h3>Full Truck</h3>
+            <p class="price">$499 - $699</p>
+            <ul>
+              <li>All-in, no hidden fees</li>
+              <li>Maximum value per load</li>
+              <li>Best for renovations and moves</li>
+            </ul>
           </article>
-          <article class="service">
-            <div class="icon" aria-hidden="true">♻️</div>
-            <h3 class="title">We Recycle & Donate</h3>
-            <p>If your items still have life, we take them to the nearest charity or recycling depot.</p>
-          </article>
+        </div>
+        <p class="fineprint">Final price depends on load size, access, and item type. Free on-site quotes.</p>
+      </div>
+    </section>
+
+    <section class="container" id="what-we-remove">
+      <h2>What We Remove</h2>
+      <div class="grid-2">
+        <ul class="tick-list">
+          <li>Furniture and mattresses</li>
+          <li>Appliances and electronics</li>
+          <li>Yard waste and construction debris</li>
+          <li>Garage, basement and storage cleanouts</li>
+        </ul>
+        <ul class="tick-list">
+          <li>Office and retail junk</li>
+          <li>Property management cleanups</li>
+          <li>Hot tubs, sheds and swing sets</li>
+          <li>And much more — just ask!</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="stripe" id="business">
+      <div class="container">
+        <h2>Business Services</h2>
+        <p class="lead">Reliable, insured, and on-time for property managers, contractors, realtors and offices.</p>
+        <div class="badges">
+          <span class="badge">After-hours pickup</span>
+          <span class="badge">Certificate of insurance</span>
+          <span class="badge">On-call crews</span>
+          <span class="badge">Net-30 billing available</span>
         </div>
       </div>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>© <span id="year"></span> Alberta Junk King • Alberta, Canada</div>
-      <div><a href="/privacy.html">Privacy</a> · <a href="/terms.html">Terms</a></div>
-    </div>
-  </footer>
+    <section class="container" id="locations">
+      <h2>Alberta Locations</h2>
+      <p class="lead">Proudly serving Calgary, Edmonton, Red Deer, Lethbridge and nearby communities.</p>
+      <div class="locations-grid">
+        <div class="location">Calgary</div>
+        <div class="location">Edmonton</div>
+        <div class="location">Red Deer</div>
+        <div class="location">Lethbridge</div>
+        <div class="location">Airdrie</div>
+        <div class="location">St. Albert</div>
+      </div>
+    </section>
 
-  <script src="/assets/js/main.js" defer></script>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
-</html>
+    <section class="stripe" id="reviews">
+      <div class="container">
+        <h2>Reviews</h2>
+        <div class="quotes">
+          <blockquote>
+            “Booked in the morning and the junk was gone by dinner. Friendly team!”
+            <cite>— Melissa, Calgary</cite>
+          </blockquote>
+          <blockquote>
+            “Clear pricing and they swept up after. Will use again.”
+            <cite>— Adam, Edmonton</cite>
+          </blockquote>
+          <blockquote>
+            “They donated our furniture which meant a lot. Highly recommend.”
+            <cite>— Priya, Red Deer</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
 
+    <section class="container" id="contact">
+      <h2>Book Your Pickup</h2>
+      <p class="lead">Tell us what you have and your preferred time. We’ll confirm with an upfront quote.</p>
+      <form class="contact-form" id="booking-form">
+        <div class="form-grid">
+          <label>
+            Name
+            <input type="text" name="name" required placeholder="Jane Doe" />
+          </label>
+          <label>
+            Phone
+            <input type="tel" name="phone" required placeholder="(555) 555-5555" />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            City
+            <input type="text" name="city" required placeholder="Calgary" />
+          </label>
+          <label class="full">
+            What do you need removed?
+            <textarea name="items" rows="4" required placeholder="Sofa, boxes, yard waste…"></textarea>
+          </label>
+          <label class="full">
+            Preferred date/time
+            <input type="text" name="when" placeholder="Tomorrow after 4pm" />
+          </label>
+        </div>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Request Free Quote</button>
+          <a class="btn btn-outline" href="tel:+15875550123">Call: (587) 555-0123</a>
+        </div>
+        <p class="fineprint">By submitting, you agree to be contacted via phone, SMS or email.</p>
+      </form>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <div class="brand small"><span class="crown">♛</span> Albreta Junk King</div>
+          <p>Eco-friendly junk removal in Alberta. Fully insured.</p>
+        </div>
+        <nav>
+          <a href="#top">Back to Top</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#what-we-remove">What We Remove</a>
+          <a href="#contact">Book</a>
+        </nav>
+        <div class="footer-right">
+          <p>&copy; <span id="year"></span> Albreta Junk King. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
